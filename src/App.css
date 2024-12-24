@@ -1,0 +1,979 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.headerCont {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #e0dcdc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerLogo {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: #7a0404;
+    cursor: pointer;
+}
+
+.searchBarContainer {
+    position: relative;
+    width: 45%;
+}
+
+.searchBar {
+    width: 100%;
+    height: 40px;
+    border: .5px solid gray;
+    overflow: hidden;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.searchBar>input {
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.searchBar>input:focus {
+    outline: none;
+}
+
+.searchIcon {
+    width: 10%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.searchDropdown {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.searchItem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.searchItem:last-child {
+    border-bottom: none;
+}
+
+.searchItem:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.searchItemImage{
+    width: 18%;
+    height: 120px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchItemImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.searchItemText{
+    width: 75%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.searchItemTitle{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    color: #7a0404;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.searchItemPrice{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+    color: #7a0404;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.searchItemDis{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+
+.headerRight {
+    width: 15%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right
+}
+
+.headerRightMain {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginIcon {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.AddToCartIcon {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.cartIcon {
+    font-size: 28px;
+}
+
+.loginIcon:active,
+.AddToCartIcon:active {
+    opacity: .5px;
+}
+
+.noCart {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.noCartIcon {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+/* Navigation Start */
+
+.navHeader {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e0dcdc;
+}
+
+.navHeaderItem {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navHeaderItem>li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navHeaderItem>li:active {
+    opacity: 0.5;
+}
+
+
+/* What's New Category Started */
+
+.whatsNew {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsNewTitle {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a0404;
+}
+
+.whatsNewTitle>h1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.whatsNewCategory {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.catSlider {
+    width: 93%;
+    height: 100%;
+}
+
+.catBoxes {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.catBoxImg {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.catBoxImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.catBoxImage img {
+    object-fit: cover;
+}
+
+.catBoxTitle {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    color: #7a0404;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Trending for Home Page */
+
+.trendingHeading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.trendingHeading>h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a0404;
+}
+
+.allProductsDiv {
+    width: 100%;
+    height: 520px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Design */
+
+.cardCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardImg {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardImg img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardImg:hover img {
+    transform: scale(1.1);
+}
+
+.cardtitle {
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 10px;
+}
+
+.cardPrice {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a0404;
+}
+
+/* AllProduct Slider Design */
+
+.allProductSlider {
+    width: 95%;
+    height: 100%;
+}
+
+.CardMain {
+    width: 100%;
+    height: 520px;
+}
+
+/* Change color of left arrow */
+.slick-prev:before {
+    color: #c9c6c6 !important;
+}
+
+/* Change color of right arrow */
+.slick-next:before {
+    color: #c9c6c6 !important;
+}
+
+/* Footer Design */
+.FooterCont {
+    width: 100%;
+    height: 260px;
+    padding: 30px;
+    border-top: 1px solid #e0dcdc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FooterCont li {
+    list-style: none;
+}
+
+.contactUs {
+    width: 23%;
+    height: 90%;
+    padding: 10px;
+}
+
+.customerCare,
+.information {
+    width: 18%;
+    height: 90%;
+    padding: 10px;
+}
+
+.newLetter {
+    width: 27%;
+    height: 90%;
+    padding: 10px;
+}
+
+.liHeader {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #7a0404;
+}
+
+.contactChild {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.iconss {
+    width: 20%;
+    height: 100%;
+    font-size: 18px;
+    color: #7a0404;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.simple {
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.copyRight {
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Collection Page Design Started */
+
+.collectionCat {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-bottom: 1px solid #e0dcdc;
+    margin-bottom: 30px;
+}
+
+.collectionCatName {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collectionCatName>h1 {
+    text-align: center;
+    color: #7a0404;
+}
+
+.collectionCatBox {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.catBoxCont {
+    width: 20%;
+    height: 100%;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.catBoxContImg {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.catImgBoc {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catImgBoc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.catBoxTitles {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a0404;
+    font-size: 16px;
+}
+
+/* Category Card Design */
+
+.catCardsMain {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.catCardCont {
+    width: 24%;
+    height: 520px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.catCardImg {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.catCardImg img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.catCardImg:hover img {
+    transform: scale(1.1);
+}
+
+.catCardTitle {
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 10px;
+}
+
+.catCardPrice {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a0404;
+}
+
+.dis {
+    color: gray;
+    margin-right: 10px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+/* Fabric Page Design Start */
+
+.fabricHeading {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #7a0404;
+    margin-top: 20px;
+}
+
+/* Modal Page */
+
+.modalMain {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.ModalLeftSide {
+    width: 55%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgBox {
+    width: 48%;
+    height: 450px;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imgBox:hover img {
+    transform: scale(1.1);
+
+}
+
+.ModalRightSide {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.modalTitle {
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.modalPKR {
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #7a0404;
+    margin-bottom: 10px;
+}
+
+.modalSize {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sizeBox {
+    width: 9%;
+    height: 38px;
+    background-color: #7a0404;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    margin: 0px 5px;
+}
+
+.modalFabric {
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.modalDes {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ModalAddToCard {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalAddTo {
+    width: 80%;
+    height: 80%;
+    background-color: #7a0404;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.addInc:active,
+.modalAddTo:active {
+    opacity: 0.3;
+}
+
+/* Add To Cart Styling */
+
+.cartMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cartMainBox {
+    width: 100%;
+    height: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+.addCartProd {
+    width: 100%;
+    height: 150px;
+    margin: 0px 0px 7px 0px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.addCartProd:hover {
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.addCartProdImg {
+    width: 40%;
+    height: 100%;
+}
+
+.addCartProdImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.addCartProdText {
+    width: 58%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.addCartProdTitle {
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.addCartProdPrice {
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;
+    font-size: 14px;
+    color: #7a0404;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.addCartProdCart {
+    width: 70%;
+    height: 25%;
+    border: 1px solid #7a0404;
+    border-radius: 20px;
+    margin: 5px 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incDec {
+    width: 30%;
+    height: 100%;
+    color: #7a0404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.incDec:active {
+    opacity: 0.5;
+}
+
+.addCartDeleteIcon {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: #7a0404;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+
+.subTotalDiv {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.subTotalBox {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+    color: #7a0404;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.checkBtn {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkButton {
+    width: 60%;
+    height: 70%;
+    border-radius: 30px;
+    background-color: #7a0404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.checkButton:active {
+    opacity: 0.5;
+}
