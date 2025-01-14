@@ -9,7 +9,7 @@ const Footers = () => {
         window.open('www.linkedin.com/in/naveed-ahmed-8340b6281', "_blank")
     }
     const goGitHub = () => {
-        window.open('www.linkedin.com/in/naveed-ahmed-8340b6281', "_blank")
+        window.open('https://github.com/Naveed786Ahmed/TrendVibe-FrontEnd.git', "_blank")
     }
 
     return (

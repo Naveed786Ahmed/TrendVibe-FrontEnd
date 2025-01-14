@@ -70,6 +70,12 @@ const HeaderApp = () => {
         navigate(`/product/${id}`)
     }
 
+
+    const goCheckOut = () => {
+        navigate(`/checkout`)
+    }
+
+
     return (
         <>
             <div className="headerCont">
@@ -170,7 +176,7 @@ const HeaderApp = () => {
                                                         <p>PKR {getTotal}</p>
                                                     </div>
                                                     <div className="checkBtn">
-                                                        <div className="checkButton">
+                                                        <div className="checkButton" onClick={goCheckOut}>
                                                             CHECK OUT
                                                         </div>
                                                     </div>

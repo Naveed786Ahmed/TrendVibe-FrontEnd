@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Collections from './pages/Collections'
 import FabricsPage from './pages/FabricsPage'
 import ModalPage from './pages/ModalPage'
+import CheckOut from './pages/CheckOut'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             <Route path='/collection/:category' element={<Collections />}/>
             <Route path='/fabric/:fabric' element={<FabricsPage />}/>
             <Route path='/product/:id' element={<ModalPage />}/>
+            <Route path='/checkout' element={<CheckOut />}/>
         </Routes>
     </>
   )
